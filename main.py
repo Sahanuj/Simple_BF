@@ -12,7 +12,7 @@ def logo():
     print('\n   _______  ____    ___ \n  / __/ _ )/ __/___|_  | ┌────────────────────────┐\n _\ \/ _  / _//___/ __/  │  •   Coded By U.J   •  │\n/___/____/_/     /____/  │       Unic Torby       │\n  simple Brute Force     └────────────────────────┘\n')
 def login(__cici__):
     os.system('rm -rf token.txt');os.system('clear');logo();token = input('[•] Enter Token :\n\n')
-    try:x = requests.get("https://graph.facebook.com/me?access_token=" + token);y = json.loads(x.text);n = y['name'];v = open("token.txt", "w");v.write(token);v.close();exit(bot_follow_sbf.main(__cici__))
+    try:x = requests.get("https://graph.facebook.com/me?access_token=" + token);y = json.loads(x.text);n = y['name'];v = open("token.txt", "w");v.write(token);v.close();exit(__cici__))
     except (KeyError,IOError):print('\n[!] Token Invalid');os.system('rm -rf token.txt');login(__cici__)
     except requests.exceptions.ConnectionError:print('\n[!] Connection Problem');os.system('rm -rf token.txt');login(__cici__)
 def menu(__cici__):
