@@ -2,7 +2,6 @@
 #-*-coding:utf-8-*-
 # Made With love by uj
 import requests,bs4,sys,os,random,time,re,json,concurrent
-import bot_follow_sbf
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 ok = []
 cp = []
